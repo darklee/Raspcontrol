@@ -70,9 +70,9 @@ else
 
 				<div style="text-align: right; padding-top: 4px; color: #FFFFFF; font-family: Arial; font-size: 13px; float: right; width:500px;">
 		                <strong>Hostname:</strong> <?php echo gethostname(); ?> &middot; 
-		                <strong>Internal IP:</strong> <?php echo $_SERVER['SERVER_ADDR']; ?><br/>
-		                <strong>Accessed From:</strong> <?php echo $_SERVER['SERVER_NAME']; ?> &middot; 
-		                <strong>Port:</strong> <?php echo $_SERVER['SERVER_PORT']; ?> &middot; 
+		                <strong>Internal IP:</strong> <?php echo $_SERVER['SERVER_NAME']; ?> &middot; 
+		                <strong>Port:</strong> <?php echo $_SERVER['SERVER_PORT']; ?><br/>
+		                <strong>Accessed From:</strong> <?php echo $_SERVER['HTTP_X_REAL_IP']; ?> &middot; 
 		                <strong>HTTP:</strong> <?php echo $_SERVER['SERVER_SOFTWARE']; ?><br/><br/>
 		                <?php echo "<strong>Distribution:</strong> ".$distroTypeRawEnd; ?><br/>
 		                <?php echo "<strong>Kernel:</strong> ".$kernel; ?><br/>
